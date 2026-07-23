@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Feliz cumpleaños Carmelita 🙂</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="game-wrap">
+    <canvas id="game"></canvas>
+
+    <div id="touch-controls">
+      <div id="dpad">
+        <button data-dir="up" aria-label="Arriba">▲</button>
+        <button data-dir="left" aria-label="Izquierda">◀</button>
+        <button data-dir="right" aria-label="Derecha">▶</button>
+        <button data-dir="down" aria-label="Abajo">▼</button>
+      </div>
+      <button id="interact-btn" class="hidden">Hablar</button>
+    </div>
+
+    <div id="dialog-overlay" class="hidden">
+      <div id="dialog-box">
+        <button id="dialog-close" aria-label="Cerrar">✕</button>
+        <h2 id="dialog-name"></h2>
+        <div id="dialog-content"></div>
+      </div>
+    </div>
+
+    <div id="start-overlay">
+      <div class="floaties" aria-hidden="true">
+        <span style="left: 4%; animation-duration: 15s; animation-delay: 0s;">🐣</span>
+        <span style="left: 16%; animation-duration: 19s; animation-delay: 3s;">🥚</span>
+        <span style="left: 28%; animation-duration: 13s; animation-delay: 1s;">🐔</span>
+        <span style="left: 40%; animation-duration: 17s; animation-delay: 5s;">🐷</span>
+        <span style="left: 52%; animation-duration: 14s; animation-delay: 2s;">🐮</span>
+        <span style="left: 64%; animation-duration: 18s; animation-delay: 4s;">🐣</span>
+        <span style="left: 76%; animation-duration: 16s; animation-delay: 6s;">🥚</span>
+        <span style="left: 87%; animation-duration: 20s; animation-delay: 2.5s;">🐔</span>
+        <span style="left: 95%; animation-duration: 15.5s; animation-delay: 4.5s;">🐮</span>
+      </div>
+      <div id="start-box">
+        <h2>Feliz cumple carmelita</h2>
+        <p>
+          A pesar de la distancia queríamos estar cerquita de alguna manera,
+          charla con todos los personajes para descubrir la sorpresa :)
+        </p>
+        <p class="animal-picker-label">Elegí tu animalito favorito:</p>
+        <div class="animal-picker">
+          <button class="animal-btn" data-emoji="🐣" aria-label="Pollito">🐣</button>
+          <button class="animal-btn" data-emoji="🥚" aria-label="Huevo">🥚</button>
+          <button class="animal-btn" data-emoji="🐔" aria-label="Gallina">🐔</button>
+          <button class="animal-btn" data-emoji="🐷" aria-label="Chancho">🐷</button>
+          <button class="animal-btn" data-emoji="🐮" aria-label="Vaca">🐮</button>
+        </div>
+        <button id="start-btn">Comenzar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>
